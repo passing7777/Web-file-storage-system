@@ -54,7 +54,7 @@ model File {
   fileSize    BigInt
   fileType    String    @db.VarChar(100)
   storagePath String    @db.VarChar(500)
-  deletedAt   DateTime? @default(null)
+  deletedAt   DateTime?
   createdAt   DateTime  @default(now())
   updatedAt   DateTime  @updatedAt
 
